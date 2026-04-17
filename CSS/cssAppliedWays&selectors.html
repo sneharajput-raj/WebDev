@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="cssAppliedWays.css">   <!--link css file(external file)-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {                                          
+            color: rgb(204, 211, 17);
+            background-color: rgb(156, 21, 21);
+        }
+        /* .P2{      
+            color: rgb(188, 234, 234);
+            background-color: cornflowerblue;
+            border: 3px solid black;
+        }
+        #P3 {
+            color: coral;
+            background-color: rgb(114, 231, 233);
+        } */
+    </style>
+</head>
+<body>
+    <p style="color: rgb(207, 49, 210); background-color: rgba(76, 138, 13, 0.829) ; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, modi distinctio. Sunt ex pariatur magnam impedit tempore, distinctio sed laboriosam aliquid ea rem quaerat, nostrum fugit, animi harum molestiae earum!</p>
+    <!-- priority in Applying CSS:
+    1st - Inline    (style attribute)
+    2nd - Internal css   (style tag)
+    3rd - External css   (css file)
+    or !important laga de do imp wala css baki sare css ko override kr dega -->
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quod tempora nulla dolorem. Modi, iste.</p>
+    <p class="P2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, ab.</p>
+    <p id="P3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quidem.</p>
+            <!--class selector access in style tag in head tag using dot(.)-->
+            <!--id selector access using hash(#)-->
+            <!-- priority in Selector:
+            1st - ID Selector
+            2nd - class Selector
+            3rd - Tag selector (access using tag name) -->
+</body>
+</html>
