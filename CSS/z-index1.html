@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+        }
+        .box1{
+            background: lightcoral;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 10;
+        }
+        .box2{
+            background: lightgreen;
+            /* display: none; */   /* display none se box2 ke image ko none ke dega & gap bi maintain nhi rhega*/
+            /* visibility: hidden; */   /*visibility default show krta hai but hidden dene pr wo visible hone se rok deta hai but gap maintain rhega */
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 10;
+        }
+        .box3{
+            background-color: lightsalmon;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            z-index: 10;
+        }
+        .box4{
+            background-color: lightseagreen;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <!-- what is z-index :  it decide _ overlap hone pr konsa element upar dikhega
+      & z-index tb hi kaam krega jab POSITION di hoo -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>

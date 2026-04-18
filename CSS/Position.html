@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+            height: 200vh;
+            background-color: rgba(218, 194, 162, 0.775);
+        }
+        .i2{
+            position: relative;  /*gap maintain krta hai*/
+            top: 40px;
+        }
+         .i4{
+            position: absolute;   /*Gap maintain nhi krta --> jisse overlap hota hai */
+             top: 50px;
+        } 
+        .i1{
+            position: sticky;  /* page piche se scroll hote jata hai -->parent element ki
+             hight tk hi stick(fix) rhta hai --> jaise hi parent(container) ki height puri hui stick scroll ho jata hai*/
+            top: 0;
+        }
+        .i3{
+            position: fixed;   /*full screen pr fix ho jata hai--> move nhi hota*/
+            right: 100px;
+        }
+        .box{
+            height: 1000px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="i1" height="300px" width="250px" src="../Assets/bullet.png" alt="">
+        <img class="i2" height="300px" width="250px" src="../Assets/thar.jpg" alt="">
+        <img class="i3" height="300px" width="250px" src="../Assets/BMW M5.jpg" alt="">
+        <img class="i4" height="300px" width="300px" src="../Assets/porscheCarImg.jpg" alt="">
+    </div>
+    <div class="box"></div>
+</body>
+</html>
