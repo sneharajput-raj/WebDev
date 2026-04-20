@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .descendent p {         /*inside --> nested element mein bhi*/
+            background: lightcoral;
+            font-family: cursive;
+        }
+        .child > p{            /*only child pr --> nested element mein nahi*/
+            background: lightseagreen;
+            color: chartreuse;
+        }
+        .adjacentSibling + p{    /*ony next sibling par*/
+            background: lightgreen;
+            font-style: italic;
+        }
+        .generalSibling ~ p{      /*all next sibling par*/
+            background: lightslategray;
+        }
+    </style>
+</head>
+<body>
+    <h2>DESCENDENT COMBINATOR</h2>
+    <div class="descendent">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </section>
+    </div>
+    
+    <h2>CHILD COMBINATOR</h2>
+    <div class="child">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ex!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ex!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ex!</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptatum fugiat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptatum fugiat.</p>
+        </section>
+    </div>
+
+    <h2>ADJACENT SIBLING COMBINATOR</h2>
+    <section class="adjacentSibling">
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+    </section>
+       <p>ONLY IS SIBLING YA ADJACENT ELEMENT PAR Lorem ipsum dolor sit amet.</p>
+       <p>Lorem ipsum dolor sit amet.</p>
+       <p>Lorem ipsum dolor sit amet.</p>
+
+       <h2>GENERAL SIBLING COMBINATOR</h2>
+    <article class="generalSibling">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, unde dolor vero neque animi deserunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, unde dolor vero neque animi deserunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, unde dolor vero neque animi deserunt.</p>
+    </article>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis unde voluptatibus debitis cum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis unde voluptatibus debitis cum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis unde voluptatibus debitis cum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis unde voluptatibus debitis cum.</p>
+</body>
+</html>
