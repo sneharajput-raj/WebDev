@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: x-large;
+            text-shadow: 2px 2px red;   /*without blur --> sharp shadow*/
+        }
+        span{
+            font-size: xx-large;
+            text-shadow: 3px 4px 7px purple;    /*default right-bottom side shadow aati hai*/
+        }
+        h1{
+            text-shadow: -3px -6px 8px rgb(211, 76, 99);    /*left-top side shadow */
+        }
+        h2{
+            text-shadow: 2px 2px 5px red, -2px -2px 5px blue;    /*multiple shadows*/
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, ipsum?</p>
+    <span>Lorem ipsum dolor sit, amet consectetur adipisicing.</span>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+</body>
+</html>
