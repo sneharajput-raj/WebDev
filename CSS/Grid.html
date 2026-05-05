@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 10px;
+            /* grid-template-columns: 1fr 1fr 1fr 2fr; */     /*columns ki width badhata h*/
+            /* grid-template-columns: 300px 1fr 1fr ; */
+            /* grid-template-columns: 0 1fr 1fr ; */
+            /* grid-template-columns: repeat(4, 1fr); */
+            /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));   Responsive(grid) banata h */
+            /* grid-template-rows: 200px 100px 130px 50px 300px ;     rows ki height */
+        }
+        .item{
+            background-color: lightseagreen;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            grid-column: 1/3;      /*3-1 = 2 (2 column merge)*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item content">box1</div>
+        <div class="item content">box2</div>
+        <div class="item">box3</div>
+        <div class="item">box4</div>
+        <div class="item">box5</div>
+        <div class="item">box6</div>
+        <div class="item">box7</div>
+        <div class="item">box8</div>
+        <div class="item">box9</div>
+        <div class="item">box10</div>
+    </div>
+</body>
+</html>
